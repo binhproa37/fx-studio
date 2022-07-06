@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DelagationParttern" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="su6-ym-fod">
+                                <rect key="frame" x="139.5" y="437.5" width="135.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Show 2nd screen"/>
+                                <connections>
+                                    <action selector="didTapShow2ndScreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nNd-OL-2B5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="su6-ym-fod" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="6EO-Lg-gMd"/>
+                            <constraint firstItem="su6-ym-fod" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="c0q-Pw-C0E"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="v41-6Y-BRu" kind="show" identifier="goToSecondScreen" id="Cl2-7g-3yd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="64"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="KKn-ld-LRI">
+            <objects>
+                <viewController id="v41-6Y-BRu" customClass="ViewController2" customModule="DelagationParttern" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sX2-wF-EuB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqc-P0-BIs">
+                                <rect key="frame" x="173.5" y="427.5" width="67" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="didTapButton:" destination="v41-6Y-BRu" eventType="touchUpInside" id="sOD-Bg-6po"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Dmg-Z9-Oxx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zqc-P0-BIs" firstAttribute="centerY" secondItem="Dmg-Z9-Oxx" secondAttribute="centerY" id="3lE-P2-2MS"/>
+                            <constraint firstItem="zqc-P0-BIs" firstAttribute="centerX" secondItem="Dmg-Z9-Oxx" secondAttribute="centerX" id="AXc-bL-6Ww"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="GJy-VM-Lyd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t2w-aP-CfL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="719" y="64"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
